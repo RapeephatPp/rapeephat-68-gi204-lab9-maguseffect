@@ -13,10 +13,14 @@ public class AngularVelocity : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Keyboard.current.aKey.isPressed)
+        if (Input.GetKey(KeyCode.A))
         {
             rb.angularVelocity = new Vector3(0, spinSpeed, 0);
         }
-        
+        else
+        {
+            rb.angularVelocity = Vector3.zero;
+        }
+
     }
 }
