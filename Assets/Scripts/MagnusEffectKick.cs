@@ -7,7 +7,7 @@ public class MagnusEffectKick : MonoBehaviour
     private bool isShot = false;
     
     public int kickForce = 2;
-    public int spinAmount = 2;
+    public float spinAmount = 2;
     public float magnusStrengh = 0.5f;
     
     
